@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_frame"
+    android:layout_width="@dimen/chat_image_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bubble"
+    android:backgroundTint="@color/chat_placeholder">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/lock_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_lock_dim" />
+
+    <TextView
+        android:id="@+id/lock_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/ic_lock" />
+</FrameLayout>
